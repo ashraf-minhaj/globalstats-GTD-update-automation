@@ -149,32 +149,29 @@ def create_new_gtd(key, name, short_name):
     
 
 if __name__ == '__main__':
-    if gtd == 'weekly':
-        try:
+    try:
+        if gtd == 'weekly':
             sign_in()
             delete_gtd(weekly_dlt_url)
             time.sleep(.600)
             create_new_gtd(key=weekly_gtd_key, name=weekly_gtd_key, short_name=weekly_gtd_short_name)
-        except Exception as e:
-            logging.exception(e)
-    
-    if gtd == 'monthly':
-        try:
+        
+        if gtd == 'monthly':
             sign_in()
             delete_gtd(monthly_dlt_url)
             time.sleep(.600)
             create_new_gtd(key=monthly_gtd_key, name=monthly_gtd_key, short_name=monthly_gtd_short_name)
-        except Exception as e:
-            logging.exception(e)
 
-    if gtd == 'test':
-        try:
+        if gtd == 'test':
             sign_in()
             delete_gtd(test_gdt_dlt_url)
             time.sleep(.600)
             create_new_gtd(key=test_gtd_key, name=test_gtd_key, short_name=test_gtd_short_name)
-        except Exception as e:
-            logging.exception(e)
+        
+    except Exception as e:
+        logging.exception(e)
+        pass
+
     
     # sleep(10)
 
