@@ -1,5 +1,5 @@
 # globalstats-GTD-update-automation
- Python Selenium Script to automate GlobalStats Tracked Data update
+DigitalOcean- Python Selenium Script to automate GlobalStats Tracked Data update
 
 ### set up server
 #### 1. Log in to server droplet
